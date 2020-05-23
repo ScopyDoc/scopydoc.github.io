@@ -73,21 +73,24 @@
   setInterval(draw, 20);
     }
 </script>
-<script type="text/javascript">
-	showmethemoney = function(url, size = 100) {
-	  var image = new Image();
-	  image.onload = function() {
-	    var style = [
-	      'font-size: 1px;',
-	      'padding: ' + this.height/100*size + 'px ' + this.width/100*size + 'px;',
-	      'background: url('+ url +') no-repeat;',
-	      'background-size: contain;'
-	     ].join(' ');
-	     console.log('%c ', style);
-	  };
-	  image.src = url;
-	};
-</script>
+		<script type="text/javascript">
+			console.image = function(url, size = 100) {
+			  var image = new Image();
+			  image.onload = function() {
+			    var style = [
+			      'font-size: 1px;',
+			      'padding: ' + this.height/100*size + 'px ' + this.width/100*size + 'px;',
+			      'background: url('+ url +') no-repeat;',
+			      'background-size: contain;'
+			     ].join(' ');
+			     console.log('%c ', style);
+			  };
+			  image.src = url;
+			};
+			function showmethemoney() {
+				console.image("https://github.com/ScopyDoc/scopydoc.github.io/blob/master/_images/qr.jpg?raw=true", size=20)
+			}
+		</script>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
