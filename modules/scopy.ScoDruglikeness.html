@@ -88,6 +88,15 @@
             
   <div class="section" id="scopy-scodruglikeness-package">
 <h1>scopy.ScoDruglikeness package<a class="headerlink" href="#scopy-scodruglikeness-package" title="Permalink to this headline">¶</a></h1>
+<div class="target" id="module-ScoDruglikeness"><hr class="docutils">
+<p>Created on Tue Jun 25 21:59:42 2019</p>
+<p><strong>A module used for calculating physicochemical properties.</strong></p>
+<p>You can freely use and distribute it. If you have any problem, you could contact with us timely.</p>
+<p>@Author: Zhi-Jiang Yang, Dong-Sheng Cao.</p>
+<p>@Institution: CBDD Group, Xiangya School of Pharmaceutical Science, CSU, China.</p>
+<p>@Homepage: <a class="reference external" href="http://www.scbdd.com">http://www.scbdd.com</a></p>
+<p>@Mail: <a class="reference external" href="mailto:kotori_y&#37;&#52;&#48;cbdd&#46;me">kotori<span>&#64;</span>cbdd<span>&#46;</span>me</a> and <a class="reference external" href="mailto:oriental-cds&#37;&#52;&#48;163&#46;com">oriental-cds<span>&#64;</span>163<span>&#46;</span>com</a></p>
+<hr class="docutils"></div>
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -100,7 +109,7 @@
 —&gt;AP</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the proportion of heavy atoms in the molecule that are in an aromatic ring</p>
@@ -136,7 +145,7 @@
 —&gt;FSP3</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the carbon bond saturation</p>
@@ -154,7 +163,7 @@
 —&gt;HetRatio</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the ratio between the number of non carbon atoms and the number of carbon atoms</p>
@@ -176,7 +185,7 @@
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>molecular logD under pH=7.4</p>
@@ -194,7 +203,7 @@
 —&gt;logP</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>molecular logP</p>
@@ -221,7 +230,7 @@ where, MWT: Molecular Weight; RB: Rotatable bonds; AP: Aromatic proportion</p>
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the molecular logSw</p>
@@ -239,7 +248,7 @@ where, MWT: Molecular Weight; RB: Rotatable bonds; AP: Aromatic proportion</p>
 —&gt; maxring</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>number of atoms involved in the biggest system ring</p>
@@ -257,7 +266,7 @@ where, MWT: Molecular Weight; RB: Rotatable bonds; AP: Aromatic proportion</p>
 —&gt;Dense</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>density of molecule</p>
@@ -275,7 +284,7 @@ where, MWT: Molecular Weight; RB: Rotatable bonds; AP: Aromatic proportion</p>
 —&gt;fChar</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>formal charge of molecule</p>
@@ -293,7 +302,7 @@ where, MWT: Molecular Weight; RB: Rotatable bonds; AP: Aromatic proportion</p>
 —&gt;MR</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>molecular refraction value based on Crippen method</p>
@@ -317,7 +326,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Van der Waals Volume of molecule</p>
@@ -359,7 +368,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>product-likeness score</p>
@@ -377,7 +386,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nAAtom</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the aromatic atom counts in a molecule</p>
@@ -436,7 +445,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nB</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of boron atoms</p>
@@ -454,7 +463,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nBr</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of bromine atoms</p>
@@ -472,7 +481,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nC</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of carbon atoms</p>
@@ -490,7 +499,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nCl</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of chlorin atoms</p>
@@ -508,7 +517,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nDouble</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of double bond</p>
@@ -526,7 +535,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nF</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of fluori atoms</p>
@@ -544,7 +553,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nHA</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of Hydrogen Bond Acceptors</p>
@@ -562,7 +571,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nHD</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of Hydrogen Bond Donors</p>
@@ -580,7 +589,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nHev</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of heavy atom counts in a molecule</p>
@@ -616,7 +625,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nHB</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>sum of Hydrogen Bond Donnors and Acceptors</p>
@@ -634,7 +643,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nI</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of bromine atoms</p>
@@ -652,7 +661,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nN</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of nitrogen atoms</p>
@@ -670,7 +679,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nO</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of oxygen atoms</p>
@@ -688,7 +697,7 @@ the Van der Waals radius of atom is derived from wikipedia.</p>
 —&gt;nP</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of phosphor atoms</p>
@@ -765,7 +774,7 @@ because of their high rotational energy barrier</p>
 —&gt; nSingle</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of single bond</p>
@@ -783,7 +792,7 @@ because of their high rotational energy barrier</p>
 —&gt;nStereo</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of stereo centers</p>
@@ -801,7 +810,7 @@ because of their high rotational energy barrier</p>
 —&gt;nS</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of sulfur atoms</p>
@@ -819,7 +828,7 @@ because of their high rotational energy barrier</p>
 —&gt; nTriple</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the number of triple bond</p>
@@ -845,7 +854,7 @@ Here, calculating the QED descriptor using maximal descriptor weights.
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>QED descriptor using maximal descriptor weights</p>
@@ -871,7 +880,7 @@ Here, calculating the QED descriptor using average descriptor weights.
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>QED descriptor using average descriptor weights</p>
@@ -897,7 +906,7 @@ Here, calculating the QED descriptor using unit weights.
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>QED descriptor using unit weights</p>
@@ -921,7 +930,7 @@ Here, calculating the QED descriptor using unit weights.
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>ease of synthesis</p>
@@ -939,7 +948,7 @@ Here, calculating the QED descriptor using unit weights.
 —&gt;TPSA</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>TPSA</p>
@@ -963,7 +972,7 @@ These SMARTS retrived from <a class="reference external" href="https://www.dayli
 —&gt;ab</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecular</p>
+<dd class="field-odd"><p><strong>mol</strong> (<em>rdkit.Chem.rdchem.Mol</em>) – molecule</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>classification to acid or base</p>
@@ -983,12 +992,6 @@ These SMARTS retrived from <a class="reference external" href="https://www.dayli
 </div>
 <div class="section" id="module-scopy.ScoDruglikeness.molproperty_Lib">
 <span id="scopy-scodruglikeness-molproperty-lib-module"></span><h2>scopy.ScoDruglikeness.molproperty_Lib module<a class="headerlink" href="#module-scopy.ScoDruglikeness.molproperty_Lib" title="Permalink to this headline">¶</a></h2>
-<p>Created on Fri May 15 22:47:38 2020</p>
-<p>&#64;Author: Zhi-Jiang Yang, Dong-Sheng Cao
-&#64;Institution: CBDD Group, Xiangya School of Pharmaceutical Science, CSU, China
-&#64;Homepage: <a class="reference external" href="http://www.scbdd.com">http://www.scbdd.com</a>
-&#64;Mail: <a class="reference external" href="mailto:yzjkid9&#37;&#52;&#48;gmail&#46;com">yzjkid9<span>&#64;</span>gmail<span>&#46;</span>com</a>; <a class="reference external" href="mailto:oriental-cds&#37;&#52;&#48;163&#46;com">oriental-cds<span>&#64;</span>163<span>&#46;</span>com</a>
-&#64;Blog: <a class="reference external" href="https://blog.iamkotori.com">https://blog.iamkotori.com</a></p>
 <dl class="class">
 <dt id="scopy.ScoDruglikeness.molproperty_Lib.PC_properties">
 <em class="property">class </em><code class="sig-prename descclassname">scopy.ScoDruglikeness.molproperty_Lib.</code><code class="sig-name descname">PC_properties</code><span class="sig-paren">(</span><em class="sig-param">mols</em>, <em class="sig-param">n_jobs=1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scopy/ScoDruglikeness/molproperty_Lib.html#PC_properties"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scopy.ScoDruglikeness.molproperty_Lib.PC_properties" title="Permalink to this definition">¶</a></dt>
@@ -2459,12 +2462,6 @@ nha &lt;= 10
 </div>
 <div class="section" id="module-scopy.ScoDruglikeness.rulesfilter_Lib">
 <span id="scopy-scodruglikeness-rulesfilter-lib-module"></span><h2>scopy.ScoDruglikeness.rulesfilter_Lib module<a class="headerlink" href="#module-scopy.ScoDruglikeness.rulesfilter_Lib" title="Permalink to this headline">¶</a></h2>
-<p>Created on Sat May 16 10:39:03 2020</p>
-<p>&#64;Author: Zhi-Jiang Yang, Dong-Sheng Cao
-&#64;Institution: CBDD Group, Xiangya School of Pharmaceutical Science, CSU, China
-&#64;Homepage: <a class="reference external" href="http://www.scbdd.com">http://www.scbdd.com</a>
-&#64;Mail: <a class="reference external" href="mailto:yzjkid9&#37;&#52;&#48;gmail&#46;com">yzjkid9<span>&#64;</span>gmail<span>&#46;</span>com</a>; <a class="reference external" href="mailto:oriental-cds&#37;&#52;&#48;163&#46;com">oriental-cds<span>&#64;</span>163<span>&#46;</span>com</a>
-&#64;Blog: <a class="reference external" href="https://blog.iamkotori.com">https://blog.iamkotori.com</a></p>
 <dl class="class">
 <dt id="scopy.ScoDruglikeness.rulesfilter_Lib.PC_rules">
 <em class="property">class </em><code class="sig-prename descclassname">scopy.ScoDruglikeness.rulesfilter_Lib.</code><code class="sig-name descname">PC_rules</code><span class="sig-paren">(</span><em class="sig-param">mols</em>, <em class="sig-param">n_jobs=1</em>, <em class="sig-param">detail=False</em>, <em class="sig-param">showSMILES=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/scopy/ScoDruglikeness/rulesfilter_Lib.html#PC_rules"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scopy.ScoDruglikeness.rulesfilter_Lib.PC_rules" title="Permalink to this definition">¶</a></dt>

@@ -785,3 +785,23 @@ dl {
     margin-inline-end: 0px;
     padding-inline-start: inherit;
 }
+
+#module-ScoDruglikeness {
+  text-indent: 30px;
+}
+
+#module-ScoFH {
+  text-indent: 30px;
+}
+
+#module-ScoPretreat{
+  text-indent: 30px;
+}
+
+#module-ScoRepresent {
+  text-indent: 30px;
+}
+
+#module-ScoVisualize {
+  text-indent: 30px;
+}
