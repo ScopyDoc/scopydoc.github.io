@@ -194,6 +194,7 @@
 <span class="kn">from</span> <span class="nn">scopy.ScoFH</span> <span class="kn">import</span> <span class="n">FHfilter</span>
 <span class="kn">from</span> <span class="nn">scopy.ScoTox</span> <span class="kn">import</span> <span class="n">Toxfilter</span>
 <span class="kn">from</span> <span class="nn">scopy.ScoDruglikeness</span> <span class="kn">import</span> <span class="n">PC_properties</span><span class="p">,</span> <span class="n">PC_rules</span>
+<span class="kn">from</span> <span class="nn">scopy.ScoRepresent</span> <span class="kn">import</span> <span class="n">CountMurckoFramework</span><span class="p"></span>
 
 <span class="c1">#=========================================================================</span>
 <span class="c1"># Read library</span>
@@ -217,7 +218,7 @@
 <span class="c1">#=========================================================================</span>
 <span class="c1"># Framework analyse</span>
 <span class="c1">#=========================================================================</span>
-<span class="n">scount</span> <span class="o">=</span> <span class="n">mcloud</span><span class="o">.</span><span class="n">CountScaffold</span><span class="p">(</span><span class="n">mols</span><span class="p">,</span><span class="n">stype</span><span class="o">=</span><span class="s1">&#39;Murcko&#39;</span><span class="p">)</span>
+<span class="n">scount</span> <span class="o">=</span> </span><span class="n">CountMurckoFramework</span><span class="p">(</span><span class="n">mols</span><span class="p">, </span><span class="n">n_jobs</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">scount</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">scount</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Frequency&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
 <span class="c1">#scount.to_csv(&#39;scount.txt&#39;,sep=&#39;\t&#39;,header=None)</span>
 
